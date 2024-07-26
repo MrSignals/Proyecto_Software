@@ -1,0 +1,100 @@
+/* 
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Estilos visuales
+5. Otros
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80%;
+  min-width: 320px;
+  height: 150px;
+  text-align: center;
+  background-color: green;
+  padding: 20px;
+}
+
+.header--title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header--img-left {
+  width: 70px;
+  height: 70px;
+}
+
+.header--img-right {
+  width: 250px;
+  height: 250px;
+}
+
+.header--button {
+  margin-left: 400px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  color: white;
+}
+
+main {
+  width: 20%;
+  background-color: #c7c8cc;
+}
+
+.menu--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  background-color: #508d4e;
+}
+
+.menu--container img {
+  width: 40px;
+  height: 40px;
+}
+
+.left--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left--img img {
+  width: 250px;
+}
