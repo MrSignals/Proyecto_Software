@@ -35,15 +35,94 @@
         />
       </div>
       <section class="menu--container">
-        <h2>           Menú de Opciones</h2>
+        <h2>Menú de Opciones</h2>
         <img src="./img/arrow-badge-down.png" alt="arrow-down" />
       </section>
       <section class="options--container">
-      <p><img src="./img/calendar-search.png" alt="">Mi horario de clase</p>
-      <p><img src="./img/folder.png" alt="">Mi inscripcion</p>
+        <p><img src="./img/calendar-search.png" alt="" />Mi horario de clase</p>
+        <p><img src="./img/folder.png" alt="" />Mi inscripcion</p>
       </section>
       <section class="information--container">
-        <h2> <img src="./img/user.png" alt="">Datos</h2> 
+        <div class="user--img">
+          <img src="./img/user.png" alt="" />
+          <h2>Datos</h2>
+        </div>
+        <table>
+          <tr>
+            <td>Escuela:</td>
+            <td>
+              <select class="dropdown">
+                <option></option>
+              </select>
+            </td>
+            <td>Nivel de Inscripción :</td>
+            <td>
+              <input type="text" class="text-input" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td>Créditos Tomados:</td>
+            <td><input type="text" class="text-input" readonly /></td>
+            <td>Máximo Créditos:</td>
+            <td>
+              <input type="text" class="text-input" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td>Malla:</td>
+            <td><input type="text" class="text-input" /></td>
+            <td><a href="#" class="link">Créditos Aprobados:</a></td>
+            <td><input type="text" class="text-input" readonly /></td>
+          </tr>
+          <tr>
+            <td>Periodo:</td>
+            <td><input type="text" class="text-input" /></td>
+          </tr>
+        </table>
+
+        <div class="footer--table">
+          <table>
+            <thead class="table--header">
+              <tr>
+                <th><img src="./img/users.png" alt="" />Materia</th>
+                <th>Nivel</th>
+                <th>Crédito</th>
+                <th>Paralelos</th>
+                <th>Agregar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="add-btn"></button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="add-btn"></button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="add-btn"></button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="add-btn"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
