@@ -2,6 +2,43 @@ document.addEventListener("DOMContentLoaded", () => {
   // Llama a la función para cargar datos de usuarios
   cargarDatos("/usuarios", "resultado-usuarios", ["Nombre", "Tipo"]);
 });
+// Datos simulados para Juan
+const usuarioJuan = {
+  Nombre: "Juan",
+  Apellido: "Pérez",
+  Email: "juan.perez@example.com",
+  Edad: 20,
+  Sexo: "M",
+  Tipo: "Estudiante",
+  Escuela: "Ingeniería de Sistemas",
+  Creditos: 100,
+  Nivel: 3,
+  MaxCreditos: 120,
+  Malla: "Plan 2023",
+  CreditosAprobados: 90,
+  Periodo: "2024A"
+};
+
+// Función para mostrar los datos en la tabla
+function mostrarDatos(usuario) {
+  const escuelaDropdown = document.getElementById("escuela");
+  const option = document.createElement("option");
+  option.text = usuario.Escuela;
+  option.selected = true;
+  escuelaDropdown.add(option);
+
+  document.getElementById("nivel").value = usuario.Nivel;
+  document.getElementById("creditos").value = usuario.Creditos;
+  document.getElementById("max_creditos").value = usuario.MaxCreditos;
+  document.getElementById("malla").value = usuario.Malla;
+  document.getElementById("creditos_aprobados").value = usuario.CreditosAprobados;
+  document.getElementById("periodo").value = usuario.Periodo;
+}
+
+// Llamar a la función para mostrar los datos de Juan
+document.addEventListener("DOMContentLoaded", function() {
+  mostrarDatos(usuarioJuan);
+});
 
 function cargarDatos(endpoint, idResultado, campos) {
   fetch(endpoint)
