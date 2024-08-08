@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+body {
+  height: 100%;
+}
+
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
@@ -22,16 +26,21 @@ h1 {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 80%;
-  min-width: 320px;
-  height: 150px;
+  /*  min-width: 320px; */
+  height: auto;
   text-align: center;
   background-color: green;
   padding: 20px;
@@ -63,16 +72,27 @@ header {
   cursor: pointer;
 }
 
+.header--button-print {
+  margin-left: 400px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: #36c2ce;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 h2 {
   font-size: 2.5rem;
   margin-left: 10px;
-  color: white;
+  color: #1a5319;
 }
 
-main {
+aside {
   width: 20%;
   height: 100vh;
   background-color: #c7c8cc;
+  overflow: hidden;
 }
 
 .menu--container {
@@ -110,17 +130,21 @@ main {
   width: 50px;
   height: 50px;
 }
+
+main {
+  margin-left: 20%; /* Ajusta para que no se superponga con el aside */
+  padding-top: 80px; /* Espacio para el header fijo */
+  overflow: hidden;
+}
+
 .information--container {
-  position: fixed;
-  right: 0;
-  top: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 75%;
-  margin-right: 35px;
-  min-width: 320px;
-  text-align: left;
+  position: absolute;
+  top: 100px; /* Ajusta el top según sea necesario */
+  left: 20%; /* Ajusta el left para evitar el overlap con el aside */
+  width: calc(100% - 20%);
+  height: auto; /* Asegúrate de que el contenedor ocupe toda la altura */
+  overflow-y: auto; /* Habilita el scroll si el contenido excede la altura */
+  background-color: #fff; /* Asegúrate de que el fondo sea visible */
   padding: 20px;
 }
 
@@ -195,4 +219,37 @@ th > img {
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.selected-materias {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Asegúrate de que el fondo sea visible */
+}
+
+#selected-materias-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; /* Usa un color de fondo claro para mejor visibilidad */
+}
+
+#selected-materias-table thead {
+  background-color: green;
+  color: white;
+  font-size: 2rem;
+}
+
+#selected-materias-table tbody {
+  font-size: 1.8rem;
+}
+
+.remove-btn {
+  text-align: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background-color: #f44336;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
 }

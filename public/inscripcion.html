@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestión de Horarios</title>
+    <title>Mi Inscripcion</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js" defer></script>
+    <script src="./inscripcion.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,8 +21,8 @@
             alt="calendario"
             class="header--img-left"
           />
-          <h1>Inscripcion</h1>
-          <button class="header--button">Guardar Inscripcion</button>
+          <h1>Mi Inscripcion</h1>
+          <button class="header--button-print">Imprimir Inscripcion</button>
         </div>
       </div>
     </header>
@@ -40,7 +40,7 @@
       </section>
       <section class="options--container">
         <p>
-          <img src="./img/calendar-search.png" alt="" /><a href=""
+          <img src="./img/calendar-search.png" alt="" /><a href="index.html"
             >Mi horario de clase</a
           >
         </p>
@@ -104,20 +104,6 @@
           </tr>
         </table>
 
-        <div class="footer--table">
-          <table id="materias-table">
-            <thead class="table--header">
-              <tr>
-                <th><img src="./img/users.png" alt="" />Materia</th>
-                <th>Nivel</th>
-                <th>Crédito</th>
-                <th>Paralelos</th>
-                <th>Agregar</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
         <div class="selected-materias">
           <h2>Materias Seleccionadas</h2>
           <table id="selected-materias-table">
@@ -126,7 +112,6 @@
                 <th>Materia</th>
                 <th>Paralelo</th>
                 <th>Crédito</th>
-                <th>Eliminar</th>
               </tr>
             </thead>
             <tbody>
